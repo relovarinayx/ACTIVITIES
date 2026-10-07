@@ -3,7 +3,7 @@
 
 let schoolName = "NorthWest Samar State University";
 let schoolYear = 2026;
-let maxStudents = 10;
+let maxStudents = 20;
 
 
 // 2. OBJECT LITERALS
@@ -130,7 +130,7 @@ let student3 = new Student(
 let teacher1 = new Teacher(
     "Mr. Yuri",
     35,
-    "Object Oriented Programming"
+    "ProfElec Mobile  Programming"
 );
 
 
