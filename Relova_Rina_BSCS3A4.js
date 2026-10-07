@@ -12,9 +12,9 @@ let activities = ["Quiz", "Project", "Recitation"];
 
 // Conditional 1: Check age
 if (age >= 18) {
-    console.log(studentName + " is an adult student.");
+    console.log(`${studentName} is an adult student.`);
 } else {
-    console.log(studentName + " is a minor student.");
+    console.log(`${studentName} is a minor student.`);
 }
 
 // Conditional 2: Check course
@@ -25,10 +25,17 @@ if (course === "BS Computer Science") {
 }
 
 // Conditional 3: Check grade
-if (grades[0] >= 75) {
-    console.log("The student passed the first subject.");
+// Conditional 3: Check the average grade
+let total = 0;
+for (let i = 0; i < grades.length; i++) {
+    total += grades[i];
+}
+const average = total / grades.length;
+
+if (average >= 75) {
+    console.log(`The student passed with an average of ${average.toFixed(2)}.`);
 } else {
-    console.log("The student failed the first subject.");
+    console.log(`The student failed with an average of ${average.toFixed(2)}.`);
 }
 
 // ===== 3 LOOPS =====
