@@ -1,5 +1,5 @@
 // ---- 10 let variables ----
-let schoolName = "NorthWest Samar State  University";
+let schoolName = "NorthWest Samar State University";
 let currentYear = 2026;
 let isEnrollmentOpen = true;
 let totalStudents = 0;
@@ -28,7 +28,7 @@ const instructor = {
   subject: "Prof.Elec",
   contact: { email: "instructor@gmail.com", phone: null },
 };
-const roomLocation = ["last", 5];
+const roomLocation = [6, 7];
 const courseList = ["AUTOMATA", "PROFELEC", "READING VISUAL ART", "SOFTWARE ENGINEERING"];
 const facilityOptions = { onlinePortal: true, uniformRequired: true };
 
@@ -78,7 +78,7 @@ const teacherEmailInfo = {
 };
 const studentContactInfo = {
   value: firstStudent?.contact?.phone ?? "rina@gmail.com",
-  advisor: instructor?.contact?.email?.toUpperCase?.() ?? "N/A",
+  advisor: instructor?.contact?.email?.toUpperCase?.() ??  "instructor@gmail.com",
 };
 
 // ---- 10 template literals ----
